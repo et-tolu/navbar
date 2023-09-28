@@ -1,0 +1,47 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+.links {
+  margin-top: 7px;
+  font-family: 'Montserrat', sans-serif;
+}
+.links ul li {
+  display: inline;
+  padding: 20px;
+}
+.logo {
+  margin-left: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: cubic-bezier(.07,.67,.15,1.02) 700ms;
+}
+.logo,img {
+  height: clamp(60px,5vw, 120px);
+}
+.buffer {
+  flex:.95;
+}
+a {
+  transition: cubic-bezier(.05,.28,.27,.97) 300ms;
+  text-decoration: underline 0.15em rgba(0,0,0,0);
+  text-underline-offset: 0.5em;
+  color: black;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 20vmin;
+}
+.logo:hover {
+  transform: scale(120%);
+  cursor:pointer;
+}
+li a:hover {
+  text-decoration: underline 0.15em rgba(0,0,0,1);
+  text-underline-offset: 0.2em;
+}
